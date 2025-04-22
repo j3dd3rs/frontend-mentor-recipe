@@ -19,6 +19,10 @@ section {
   margin-bottom: 3.2rem;
 }
 
+section:last-child {
+  margin-bottom: 0;
+}
+
 ul,
 ol {
   display: flex;
@@ -34,6 +38,10 @@ ul p {
 
 .margin-top-md {
   margin-top: 2.8rem;
+}
+
+.top-border {
+  border-top: 1px solid hsl(30, 18%, 87%);
 }
 
 .container {
@@ -59,16 +67,17 @@ ul p {
   justify-content: center;
   align-items: center;
   background-color: hsl(0, 0%, 100%);
-  padding: 3rem 3.2rem;
+  padding: 3.6rem 3.8rem;
   border-radius: 10px;
+  max-width: 67.5rem;
 }
 
 .recipe-info-container {
-  width: 67.5rem;
+  width: 100%;
 }
 
 .recipe-img {
-  width: 67.5rem;
+  width: 100%;
   border-radius: 10px;
   margin-bottom: 3rem;
 }
@@ -117,6 +126,49 @@ ul p {
 
 /* Instructions Section */
 
-.recipe-instructions {
-  border-top: 1px solid hsl(30, 18%, 87%);
+.instruction-list {
+  padding-left: 2rem;
+}
+
+.instruction-list-item::marker {
+  color: hsl(14, 45%, 36%);
+  font-weight: 600;
+  font-family: "Outfit", sans-serif;
+}
+
+.instruction-list-item p {
+  padding-left: 1.8rem;
+}
+
+/* Nutrition Section */
+
+.recipe-nutrition p {
+  margin-bottom: 2rem;
+}
+
+.nutrition-table {
+  width: 100%;
+}
+
+td,
+th {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+  padding: 1rem 0;
+}
+
+tr:last-child td,
+tr:last-child th {
+  border-bottom: none;
+}
+
+th {
+  text-align: left;
+  padding-left: 3.2rem;
+  font-weight: 400;
+  width: 50%;
+}
+
+td {
+  color: hsl(332, 51%, 32%);
+  font-weight: 600;
 }
